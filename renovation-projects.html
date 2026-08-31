@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residential Renovation Projects - Shahin Basheer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0b0f19;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+
+        /* ഹെഡർ ബാനർ */
+        .banner {
+            background: linear-gradient(rgba(11, 15, 25, 0.85), rgba(11, 15, 25, 0.85)), 
+                        url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 3px solid #ffb703;
+            padding: 30px 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .banner h1 {
+            margin: 0;
+            font-size: 26px;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .back-home {
+            color: #ffb703;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            border: 1px solid #ffb703;
+            padding: 6px 14px;
+            border-radius: 6px;
+            transition: 0.3s;
+            white-space: nowrap;
+        }
+
+        .back-home:hover {
+            background-color: #ffb703;
+            color: #0b0f19;
+        }
+
+        /* പ്രൊജക്റ്റ് കണ്ടെയ്നർ */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .section-title {
+            color: #ffffff;
+            font-size: 24px;
+            border-bottom: 2px solid #ffb703;
+            display: inline-block;
+            padding-bottom: 4px;
+            margin-bottom: 30px;
+        }
+
+        /* പ്രൊജക്റ്റ് കാർഡ് വിവരങ്ങൾ */
+        .project-card {
+            background: #121826;
+            border: 1px solid rgba(255, 183, 3, 0.3);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+        }
+
+        .project-img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+            background-color: #0b0f19;
+            display: block;
+        }
+
+        .project-body {
+            padding: 25px;
+            text-align: left;
+        }
+
+        .project-body h3 {
+            margin: 0 0 10px 0;
+            color: #ffb703;
+            font-size: 22px;
+        }
+
+        .project-body p {
+            color: #cccccc;
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .project-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .project-features li {
+            background: rgba(255, 183, 3, 0.1);
+            border: 1px solid #ffb703;
+            color: #ffb703;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                gap: 15px;
+                padding: 25px 20px;
+                text-align: center;
+            }
+
+            .banner h1 {
+                font-size: 20px;
+            }
+
+            .container {
+                margin: 20px auto;
+                padding: 15px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+
+            .project-body {
+                padding: 15px;
+            }
+
+            .project-body h3 {
+                font-size: 18px;
+            }
+
+            .project-body p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ഹെഡർ ബാനർ -->
+    <div class="banner">
+        <h1>My Projects</h1>
+        <a href="index.html" class="back-home">← Back to Home</a>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">My Featured Renovation Work</h2>
+
+        <!-- പ്രൊജക്റ്റ് 1 -->
+        <div class="project-card">
+            <img src="Renovation Thumbnail.png" alt="Residential Renovation Work" class="project-img">
+            
+            <div class="project-body">
+                <h3>Single-Story to Double-Story Residential Renovation</h3>
+                <p>
+                    This residential renovation project successfully transformed a single-story home—originally featuring a car porch, sit-out, dining room, living hall, kitchen, work area, and 3 bedrooms with attached bathrooms—into a modern, spacious double-story structure designed for upgraded living. The redesigned ground floor now accommodates a car porch, sit-out, dedicated visiting room, dining room, kitchen, 2 functional work areas, and 2 bedrooms with attached bathrooms. An entirely new first floor was added, featuring a grand main hall, 1 balcony, and 2 additional bedrooms with attached bathrooms, significantly expanding the living space while delivering enhanced privacy, improved flow, and contemporary architectural appeal.
+                </p>
+                <p>
+                    Key upgrades included complete flooring overhaul, wall strengthening, modern kitchen remodeling, and premium exterior elevation painting and lighting.
+                </p>
+
+                <!-- പ്രൊജക്റ്റിന്റെ സവിശേഷതകൾ -->
+                <ul class="project-features">
+                    <li>✔ Modern Exterior Elevation</li>
+                    <li>✔ Complete Interior Redesign</li>
+                    <li>✔ Structural Strengthening</li>
+                    <li>✔ Premium Tile & Paint Works</li>
+                    <li>✔ Single Story Design into Double Story Design</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Code -->
+    <footer style="background-color: #0b0f19; border-top: 1px solid rgba(255, 183, 3, 0.2); text-align: center; padding: 25px 10px; margin-top: 50px; color: #888888; font-size: 14px;">
+        <p style="margin: 0;">
+            &copy; 2026 <strong>Thittayil Shahin Basheer</strong>. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>

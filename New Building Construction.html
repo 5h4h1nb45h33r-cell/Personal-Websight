@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Building Constructions - Shahin Basheer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0b0f19;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+
+        /* ഹെഡർ ബാനർ */
+        .banner {
+            background: linear-gradient(rgba(11, 15, 25, 0.85), rgba(11, 15, 25, 0.85)), 
+                        url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 3px solid #ffb703;
+            padding: 30px 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .banner h1 {
+            margin: 0;
+            font-size: 26px;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .back-home {
+            color: #ffb703;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            border: 1px solid #ffb703;
+            padding: 6px 14px;
+            border-radius: 6px;
+            transition: 0.3s;
+            white-space: nowrap;
+        }
+
+        .back-home:hover {
+            background-color: #ffb703;
+            color: #0b0f19;
+        }
+
+        /* പ്രൊജക്റ്റ് കണ്ടെയ്നർ */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .section-title {
+            color: #ffffff;
+            font-size: 24px;
+            border-bottom: 2px solid #ffb703;
+            display: inline-block;
+            padding-bottom: 4px;
+            margin-bottom: 30px;
+        }
+
+        /* പ്രൊജക്റ്റ് കാർഡ് വിവരങ്ങൾ */
+        .project-card {
+            background: #121826;
+            border: 1px solid rgba(255, 183, 3, 0.3);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+        }
+
+        .project-img {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: contain;
+            background-color: #0b0f19;
+            display: block;
+        }
+
+        .project-body {
+            padding: 25px;
+            text-align: left;
+        }
+
+        .project-body h3 {
+            margin: 0 0 10px 0;
+            color: #ffb703;
+            font-size: 22px;
+        }
+
+        .project-body p {
+            color: #cccccc;
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .project-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .project-features li {
+            background: rgba(255, 183, 3, 0.1);
+            border: 1px solid #ffb703;
+            color: #ffb703;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        .video-container {
+            max-width: 400px;
+            margin: 25px auto 10px auto;
+            text-align: center;
+        }
+
+        .video-link {
+            display: block;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 183, 3, 0.3);
+        }
+
+        .video-thumbnail {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 0, 0, 0.85);
+            width: 50px;
+            height: 35px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 14px solid white;
+            margin-left: 3px;
+        }
+
+        /* Mobile Responsive CSS */
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                gap: 15px;
+                padding: 25px 20px;
+                text-align: center;
+            }
+
+            .banner h1 {
+                font-size: 20px;
+            }
+
+            .container {
+                margin: 20px auto;
+                padding: 15px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+
+            .project-body {
+                padding: 15px;
+            }
+
+            .project-body h3 {
+                font-size: 18px;
+            }
+
+            .project-body p {
+                font-size: 14px;
+            }
+
+            .video-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ഹെഡർ ബാനർ -->
+    <div class="banner">
+        <h1>My Projects</h1>
+        <a href="index.html" class="back-home">← Back to Home</a>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">3.5 Cent 1350 Sq Feet Double Story Residential Building</h2>
+
+        <!-- പ്രൊജക്റ്റ് കാർഡ് -->
+        <div class="project-card">
+            <img src="1 st project.jpeg" alt="3.5 Cent Residential Building Project" class="project-img">
+            
+            <div class="project-body">
+                <h3>3.5 Cent 1350 Sq Feet Double Story Residential Building</h3>
+                <p>
+                    This expertly crafted 1350 sq. ft. double-story residential building, located at Neerkode (Kallupalam), Aluva, is a fine example of modern space optimization built thoughtfully on a compact 3.5-cent plot. Designed for comfortable family living, the ground floor features a well-defined layout comprising a car porch, welcoming sit-out, dedicated visiting room, dining space, modern kitchen, and 1 bedroom with an attached bathroom. The first floor houses 2 spacious bedrooms—each with attached bathrooms—and seamlessly connects to a scenic balcony and a thoughtfully designed open terrace, ideal for outdoor relaxation. Combining smart spatial planning with modern aesthetics, this project highlights our commitment to delivering high-quality, functional homes tailored to urban land dimensions.
+                </p>
+                <p>
+                    Key upgrades included complete flooring overhaul, wall strengthening, modern kitchen remodeling, and premium exterior elevation painting and lighting.
+                </p>
+
+                <!-- പ്രൊജക്റ്റിന്റെ സവിശേഷതകൾ -->
+                <ul class="project-features">
+                    <li>✔ Site Marking & Layout</li>
+                    <li>✔ Foundation Work</li>
+                    <li>✔ Electrical & Plumbing Piping</li>
+                    <li>✔ Flooring & Tiling</li>
+                    <li>✔ Painting & Finishing</li>
+                    <li>✔ Sanitary & Fitting Installation</li> 
+                    <li>✔ Key Handover</li> 
+                </ul>
+
+                
+                    </a>
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+<div class="container">
+        <h2 class="section-title">3.5 Cent 1450 Sq Feet Double Story Residential Building</h2>
+</html> <!-- പ്രൊജക്റ്റ് കാർഡ് -->
+        <div class="project-card">
+            <img src="work no 2.jpeg" alt="3.5 Cent Residential Building Project" class="project-img">
+            
+            <div class="project-body">
+                <h3>3.5 Cent 1450 Sq Feet Double Story Residential Building</h3>
+                <p>
+                    This expertly crafted 1450 sq. ft. double-story residential building, located at Neerkode (Kallupalam), Aluva, is a fine example of modern space optimization built thoughtfully on a compact 3.5-cent plot. Designed for comfortable family living, the ground floor features a well-defined layout comprising a car porch, welcoming sit-out, dedicated visiting room, dining space, modern kitchen, and 1 bedroom with an attached bathroom. The first floor houses 2 spacious bedrooms—each with attached bathrooms—and seamlessly connects to a scenic balcony and a thoughtfully designed open terrace, ideal for outdoor relaxation. Combining smart spatial planning with modern aesthetics, this project highlights our commitment to delivering high-quality, functional homes tailored to urban land dimensions.
+                </p>
+                <p>
+                    Key upgrades included complete flooring overhaul, wall strengthening, modern kitchen remodeling, and premium exterior elevation painting and lighting.
+                </p>
+
+                <!-- പ്രൊജക്റ്റിന്റെ സവിശേഷതകൾ -->
+                <ul class="project-features">
+                    <li>✔ Site Marking & Layout</li>
+                    <li>✔ Foundation Work</li>
+                    <li>✔ Electrical & Plumbing Piping</li>
+                    <li>✔ Flooring & Tiling</li>
+                    <li>✔ Painting & Finishing</li>
+                    <li>✔ Sanitary & Fitting Installation</li> 
+                    <li>✔ Key Handover</li> 
+                </ul>
+
+                <!-- Copyright Footer Section -->
+    <footer style="background-color: #0b0f19; border-top: 1px solid rgba(255, 183, 3, 0.2); text-align: center; padding: 25px 10px; margin-top: 50px; color: #888888; font-size: 14px;">
+        <p style="margin: 0;">
+            &copy; 2026 <strong>Thittayil Shahin Basheer</strong>. All Rights Reserved.
+        </p>
+    </footer>

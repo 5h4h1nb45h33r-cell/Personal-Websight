@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thittayil Shahin Basheer - Construction Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0b0f19;
+            color: #e0e0e0;
+            min-height: 100vh;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #121826;
+            border-bottom: 1px solid rgba(255, 183, 3, 0.3);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .nav-brand {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #ffb703;
+        }
+
+        /* Banner Section */
+        .banner {
+            background: linear-gradient(rgba(11, 15, 25, 0.85), rgba(11, 15, 25, 0.85)), 
+                        url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 3px solid #ffb703;
+            padding: 60px;
+            width: 100%;
+            box-sizing: border-box;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            text-align: left;
+            position: relative;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ffb703;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.7);
+            flex-shrink: 0;
+            background-color: #444;
+            position: relative;
+            z-index: 2;
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .banner-content h1 {
+            margin: 0 0 10px 0;
+            font-size: 38px;
+            letter-spacing: 2px;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        .banner-content p {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+            color: #ffb703;
+            font-weight: 600;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .welcome-text {
+            font-size: 15px;
+            color: #e0e0e0;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        /* Responsive Styles for Mobile Devices */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 15px 20px;
+                gap: 12px;
+            }
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            .banner {
+                flex-direction: column;
+                padding: 40px 20px;
+                text-align: center;
+                gap: 15px;
+            }
+
+            .banner-content h1 {
+                font-size: 26px;
+            }
+
+            .banner-content p {
+                font-size: 16px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">Thittayil Shahin Basheer</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <a href="enquiry.html" style="color: #ffffff; text-decoration: none; margin: 0 15px;">Enquiries</a>
+        </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <img src="Fevicone.png" alt="Thittayil Shahin Basheer" class="profile-img">
+        
+        <div class="banner-content">
+            <h1>THITTAYIL SHAHIN BASHEER</h1>
+            <p>Build Your Dreams with Precision and Trust</p>
+            <div class="welcome-text">
+                Welcome to my official portfolio website.
+            </div>
+        </div>
+    </div>
+
+    <!-- My Services Section -->
+    <div class="services-container" id="services" style="max-width: 1000px; margin: 40px auto; padding: 20px; text-align: left;">
+        <h2 style="color: #ffffff; font-size: 24px; border-bottom: 2px solid #ffb703; display: inline-block; padding-bottom: 4px; margin-bottom: 25px;">My Services & Works </h2>
+        
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <a href="New Building Construction.html" style="text-decoration: none; color: inherit;">
+                <div class="service-card" style="background: #121826; border: 1px solid rgba(255, 183, 3, 0.3); border-radius: 10px; overflow: hidden; height: 100%; box-sizing: border-box;">
+                    <img src="new building construction thumbnail.png" alt="New Building Construction" style="width: 100%; height: 180px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px;">New Building Construction (Click to View) </h3>
+                        <p style="margin: 0; color: #cccccc; font-size: 14px; line-height: 1.5;">Turning Your Dream Home Vision into Quality Structural Reality..</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Service 2 -->
+            <a href="renovation-projects.html" style="text-decoration: none; color: inherit;">
+                <div class="service-card" style="background: #121826; border: 1px solid rgba(255, 183, 3, 0.3); border-radius: 10px; overflow: hidden; height: 100%; box-sizing: border-box;">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Residential Renovation Works" style="width: 100%; height: 180px; object-fit: cover;">
+                    <div style="padding: 15px;">
+                        <h3 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px;">Residential Renovation Works (Click to View)</h3>
+                        <p style="margin: 0; color: #cccccc; font-size: 14px; line-height: 1.5;">Transforming and modernizing existing residential spaces through high-class renovation and structural upgrades.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Service 3 -->
+            <div class="service-card" style="background: #121826; border: 1px solid rgba(255, 183, 3, 0.3); border-radius: 10px; overflow: hidden;">
+                <img src="Architecture & Contracting.png" alt="Architecture & Contracting" style="width: 100%; height: 180px; object-fit: cover;">
+                <div style="padding: 15px;">
+                    <h3 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px;">Architecture & Contracting (Click to View)</h3>
+                    <p style="margin: 0; color: #cccccc; font-size: 14px; line-height: 1.5;">Expert architectural planning, designing, and professional contracting services tailored to your exact vision.</p>
+                </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card" style="background: #121826; border: 1px solid rgba(255, 183, 3, 0.3); border-radius: 10px; overflow: hidden;">
+                <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Commercial Construction" style="width: 100%; height: 180px; object-fit: cover; display: block;">
+                <div style="padding: 15px;">
+                    <h3 style="margin: 0 0 8px 0; color: #ffffff; font-size: 18px;">Commercial Construction (Click to View)</h3>
+                    <p style="margin: 0; color: #cccccc; font-size: 14px; line-height: 1.5;">Quality commercial building solutions designed for modern business needs and high durability.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <section id="about" style="max-width: 800px; margin: 50px auto; padding: 40px 20px; background: #121826; border-radius: 12px; border: 1px solid rgba(255, 183, 3, 0.3); text-align: center; box-shadow: 0 8px 25px rgba(0,0,0,0.4);">
+        <h2 style="color: #ffffff; font-size: 24px; border-bottom: 2px solid #ffb703; display: inline-block; padding-bottom: 6px; margin-top: 0; margin-bottom: 20px;">About Me</h2>
+        <p style="color: #cccccc; font-size: 14px; line-height: 1.7; margin-bottom: 15px;">
+            Hello! I am <strong>Thittayil Shahin Basheer</strong>, a professional building construction and architecture contractor dedicated to turning your architectural visions into reality. With extensive expertise in the construction industry, I specialize in delivering high-quality residential building renovation works and new building construction projects.
+        </p>
+        <p style="color: #cccccc; font-size: 14px; line-height: 1.7; margin: 0;">
+            My core focus is on structural integrity, premium craftsmanship, and attention to detail. Whether you are planning to build your dream home from the ground up or give your existing space a modern makeover, I ensure every project is executed with precision, transparency, and trust.
+        </p>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" style="max-width: 800px; margin: 40px auto; padding: 35px 20px; background: #121826; border-radius: 12px; border: 1px solid rgba(255, 183, 3, 0.3); text-align: center; box-shadow: 0 8px 25px rgba(0,0,0,0.4);">
+        <h2 style="color: #ffffff; font-size: 22px; border-bottom: 2px solid #ffb703; display: inline-block; padding-bottom: 4px; margin-top: 0; margin-bottom: 20px;">Contact Me</h2>
+        <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 25px;">
+            Get in touch with me for architectural consultation, renovation, or construction works.
+        </p>
+        
+        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/918086386336" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; background-color: #25D366; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 8px; font-weight: bold; font-size: 14px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                WhatsApp Me
+            </a>
+
+            <!-- Email Button -->
+            <a href="mailto:thittayilshahinbasheer1999@gmail.com" style="display: inline-flex; align-items: center; gap: 8px; background-color: #ffb703; color: #0b0f19; text-decoration: none; padding: 12px 24px; border-radius: 8px; font-weight: bold; font-size: 14px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                Email Me
+            </a>
+
+         <!-- Instagram Button -->
+            <a href="https://www.instagram.com/_shamoneeeyyy_" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; background-color: #E1306C; color: #ffffff; text-decoration: none; padding: 12px 24px; border-radius: 8px; font-weight: bold; font-size: 14px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+                Instagram
+            </a>   
+        </div>
+    </section>
+
+    <!-- Office & Location Details Section -->
+    <div style="width: 100%; max-width: 800px; margin: 40px auto; padding: 0 20px; box-sizing: border-box; clear: both;">
+        <div style="background: #121826; border-radius: 12px; padding: 35px 25px; border: 1px solid rgba(255, 183, 3, 0.3); text-align: center; box-shadow: 0 8px 25px rgba(0,0,0,0.4);">
+            <h2 style="color: #ffffff; font-size: 22px; border-bottom: 2px solid #ffb703; display: inline-block; padding-bottom: 4px; margin-top: 0; margin-bottom: 20px;">
+                Office & Location Details
+            </h2>
+
+            <div style="color: #cccccc; font-size: 14px; line-height: 1.8; margin-bottom: 25px;">
+                <p style="margin: 0 0 5px 0; font-size: 17px; color: #ffffff;">
+                    <strong>Thittayil Shahin Basheer</strong>
+                </p>
+                <p style="margin: 0 0 15px 0; color: #ffb703; font-size: 13px;">Building Construction & Architecture Contractor</p>
+                
+                <p style="margin: 0 0 6px 0;">📍 <strong>Address:</strong> Thittayil House, Panayikulam / nalamayil , Ernakulam - Aluva / Kerala, India</p>
+                <p style="margin: 0 0 6px 0;">📞 <strong>Phone:</strong> +91 80 863 863 36 &nbsp;|&nbsp; ✉️ <strong>Email:</strong> thittayilshahinbasheer1999@gmail.com</p> 
+            </div>
+
+            <div style="width: 100%; max-width: 700px; height: 280px; margin: 0 auto; border-radius: 8px; overflow: hidden; border: 1px solid rgba(255, 183, 3, 0.3);">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.02030018872!2d76.2673041!3d9.9312328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d514abec6bf%3A0xbd582ca58458363f!2sKochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background-color: #0b0f19; border-top: 1px solid rgba(255, 183, 3, 0.2); text-align: center; padding: 20px 10px; margin-top: 50px; color: #888888; font-size: 14px;">
+        <p style="margin: 0;">
+            &copy; 2026 <strong>Thittayil Shahin Basheer</strong>. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
